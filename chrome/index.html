@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>[comets]</title> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <input type="text" id="search-input" placeholder="Search commands..." autofocus>
+      
+      <!-- Theme & Settings Controls -->
+      <select id="theme-select" title="Change Theme">
+        <option value="theme-dark">Dark Console</option>
+        <option value="theme-dracula">Dracula</option>
+        <option value="theme-light">Light Paper</option>
+      </select>
+      
+      <div class="zoom-controls">
+        <button id="zoom-out">A-</button>
+        <button id="zoom-in">A+</button>
+        <button id="open-dashboard" title="Add New Snippets">⚙️</button>
+      </div>
+    </div>
+    
+    <nav id="section-nav">
+      <button class="nav-tab active" data-sec="all">ALL</button>
+      <button class="nav-tab" data-sec="bookmarks">★ SAVED</button>
+      <button class="nav-tab" data-sec="windows">WINDOWS</button>
+      <button class="nav-tab" data-sec="linux">LINUX</button>
+      <button class="nav-tab" data-sec="git">GIT</button>
+      <button class="nav-tab" data-sec="osint">OSINT</button>
+      <button class="nav-tab" data-sec="editors">EDITORS</button>
+      <button class="nav-tab" data-sec="terminal">TERMINAL</button>
+    </nav>
+  </header>
+  
+  <main id="list-container"></main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Snippet Dashboard</title>
+  <style>
+    body { font-family: sans-serif; padding: 40px; max-width: 600px; margin: auto; background: #f4f4f4; }
+    .form-group { display: flex; flex-direction: column; margin-bottom: 15px; }
+    input, select, textarea { padding: 10px; font-size: 16px; border: 1px solid #ccc; }
+    button { padding: 10px 20px; background: #0055ff; color: white; border: none; cursor: pointer; font-size: 16px;}
+  </style>
+</head>
+<body>
+  <h2>Add New Command</h2>
+  
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" id="add-title" placeholder="e.g., Delete Docker Containers">
+  </div>
+  
+  <div class="form-group">
+    <label>Section</label>
+    <select id="add-section">
+      <option value="windows">Windows</option>
+      <option value="linux">Linux</option>
+      <option value="git">Git</option>
+      <option value="osint">OSINT</option>
+      <option value="editors">Editors</option>
+      <option value="editors">Editors</option>
+      <option value="terminal">Terminal</option>
+    </select>
+  </div>
+  
+  <div class="form-group">
+    <label>Description</label>
+    <textarea id="add-desc" rows="2"></textarea>
+  </div>
+  
+  <div class="form-group">
+    <label>Command / Code Syntax</label>
+    <input type="text" id="add-code" placeholder="e.g., docker rm $(docker ps -a -q)">
+  </div>
+  
+  <button id="save-btn">Save to Database</button>
+  <p id="status-msg" style="color: green;"></p>
+
+  <!-- External script link instead of inline code -->
+  <script src="options.js"></script>
+</body>
+</html>

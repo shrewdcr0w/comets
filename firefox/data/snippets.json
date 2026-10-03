@@ -1,0 +1,34 @@
+[
+  {
+    "id": "git-undo",
+    "section": "git",
+    "title": "Undo last commit",
+    "description": "Keeps working directory changes but removes the commit.",
+    "code": "git reset --soft HEAD~1",
+    "keywords": ["revert", "soft", "head"]
+  },
+  {
+    "id": "editor-vscode-format",
+    "section": "editors",
+    "title": "Format Document",
+    "description": "Auto-formats the current file based on active extensions.",
+    "code": "Shift + Alt + F",
+    "keywords": ["prettier", "align", "indent"]
+  },
+  {
+    "id": "term-find-port",
+    "section": "terminal",
+    "title": "Find process by port",
+    "description": "Lists PID occupying a network port.",
+    "code": "lsof -i :<port>",
+    "keywords": ["kill", "network"]
+  },
+  {
+    "id": "osint-site-search",
+    "section": "osint",
+    "title": "Domain specific search",
+    "description": "Forces search engine to only return results from a specific URL.",
+    "code": "site:example.com \"search term\"",
+    "keywords": ["dork", "google", "filter"]
+  }
+]

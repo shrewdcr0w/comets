@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- 
+    Palette (Dracula Theme):
+    Base/Shadows: #191A21
+    Caddy Body: #282A36
+    Outlines: #F8F8F2
+    Inner Detail: #6272A4
+    Syntax Left: #FF79C6 (Pink)
+    Syntax Right: #8BE9FD (Cyan)
+  -->
+
+  <rect width="256" height="256" fill="#191A21" />
+
+  <!-- Circular Hardware Body -->
+  <circle cx="128" cy="128" r="112" fill="#282A36" stroke="#F8F8F2" stroke-width="12" />
+
+  <!-- Heavy Hardware Notches (Top, Bottom, Left, Right) -->
+  <line x1="128" y1="16" x2="128" y2="44" stroke="#F8F8F2" stroke-width="12" stroke-linecap="square" />
+  <line x1="128" y1="240" x2="128" y2="212" stroke="#F8F8F2" stroke-width="12" stroke-linecap="square" />
+  <line x1="16" y1="128" x2="44" y2="128" stroke="#F8F8F2" stroke-width="12" stroke-linecap="square" />
+  <line x1="240" y1="128" x2="212" y2="128" stroke="#F8F8F2" stroke-width="12" stroke-linecap="square" />
+
+  <!-- Inner Recessed Data Screen -->
+  <circle cx="128" cy="128" r="76" fill="#191A21" stroke="#6272A4" stroke-width="8" />
+
+  <!-- Chunky Left Curly Bracket { (Pink) -->
+  <path d="M 104 92 H 88 V 112 L 72 128 L 88 144 V 164 H 104" fill="none" stroke="#FF79C6" stroke-width="12" stroke-linejoin="miter" stroke-linecap="square"/>
+
+  <!-- Chunky Right Curly Bracket } (Cyan) -->
+  <path d="M 152 92 H 168 V 112 L 184 128 L 168 144 V 164 H 152" fill="none" stroke="#8BE9FD" stroke-width="12" stroke-linejoin="miter" stroke-linecap="square"/>
+</svg>

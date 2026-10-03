@@ -1,0 +1,45 @@
+# COMETS
+
+A lightweight, floating command snippet manager and cheat sheet. It runs entirely locally, remembers its exact window position across sessions, and provides instant search and one-click copying for your most-used terminal commands and codes.
+
+## Installation
+
+1. Download or clone this repository to your local machine.
+2. **Chrome / Edge / Brave:**
+   - Navigate to `chrome://extensions/`
+   - Toggle on "Developer mode" in the top right.
+   - Click "Load unpacked" and select the `chrome` directory.
+3. **Firefox:**
+   - Navigate to `about:debugging#/runtime/this-firefox`
+   - Click "Load Temporary Add-on..."
+   - Select the `manifest.json` file inside the `firefox` directory.
+
+## Adding Commands
+
+You can add new snippets to your database in two ways:
+
+**1. Via the Dashboard**
+Click the settings button inside the extension (or right-click the extension icon and select "Options"). This opens a form to save snippets directly into your browser's local storage.
+
+**1. Fast Bulk Entry (Via File)**
+Create or edit the `snippets.json` file in the root directory. This is the fastest way to manually load hundreds of commands. Format the file as a JSON array:
+
+```json
+[
+  {
+    "id": "git-undo",
+    "section": "git",
+    "title": "Undo last commit",
+    "description": "Removes the commit but keeps changes in working directory.",
+    "code": "git reset --soft HEAD~1"
+  },
+  {
+    "id": "port-kill",
+    "section": "linux",
+    "title": "Kill process on port",
+    "description": "Force kills whatever is running on a specific port.",
+    "code": "kill -9 $(lsof -t -i:<port>)"
+  }
+]
+```
+*Note: Because the app caches data to local storage on its first run, you will need to remove and reinstall the extension in your browser for bulk `.json` file changes to take effect.*
