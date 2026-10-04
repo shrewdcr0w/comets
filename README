@@ -43,3 +43,9 @@ Create or edit the `snippets.json` file in the root directory. This is the faste
 ]
 ```
 *Note: Because the app caches data to local storage on its first run, you will need to remove and reinstall the extension in your browser for bulk `.json` file changes to take effect.*
+
+## Keyboard Shortcuts
+Summon comets instantly while coding in the browser. 
+
+* **Firefox:** `Alt + Shift + C `
+* **Chrome / Edge / Brave:** `Ctrl + \`` (Control + Backtick)

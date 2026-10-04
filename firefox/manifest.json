@@ -30,6 +30,15 @@
     "page": "options.html",
     "open_in_tab": true
   },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+C",
+        "mac": "MacCtrl+Shift+C"
+      },
+      "description": "Open comets"
+    }
+  },
   "permissions": [
     "storage",
     "clipboardWrite"
